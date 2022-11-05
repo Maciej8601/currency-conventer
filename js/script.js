@@ -1,17 +1,23 @@
-console.log("Pozdrawiam wszystkich!")
+{
+    {
+        const init = console.log("Pozdrawiam wszystkich!")
+        init;
+    }
 
-let formElement = document.querySelector(".js-form");
-let currencyElement = document.querySelector(".js-currency");
-let valueElement = document.querySelector(".js-value");
-let selectElement = document.querySelector(".js-select");
+    {
+        const formElement = document.querySelector(".js-form");
+        formElement.addEventListener("submit", (event) => {
+            event.preventDefault();
+            const valueElement = document.querySelector(".js-value");
+            const selectElement = document.querySelector(".js-select");
+            const currencyElement = document.querySelector(".js-currency");
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+            const value = valueElement.value;
+            const exchangeRate = selectElement.value;
+            const currencyName = selectElement.options[selectElement.selectedIndex].label;
 
-    let value = valueElement.value;
-    const exchangeRate = selectElement.value;
-    const currencyName = selectElement.options[selectElement.selectedIndex].label;
-
-    const result = value / exchangeRate;
-    currencyElement.innerText = result.toFixed(2) + currencyName;
-});
+            const result = value / exchangeRate;
+            currencyElement.innerText = result.toFixed(2) + currencyName;
+        });
+    }
+}
