@@ -1,5 +1,5 @@
 .form {
-    background-color: rgb(27, 1, 255);
+    background-color: rgb(66 63 88);
     border: 1px solid;
     border-radius: 5px;
     border-color: gold;
@@ -23,13 +23,13 @@
 .form__recalc {
     padding: 5px;
     margin: 0 auto;
-    background-color: hsl(236, 100%, 49%);
+    background-color: rgb(66 63 88);
     border-radius: 5px;
     color: gold;
     border-color: gold;
 }
 
 .form__recalc:hover {
-    background-color: hsl(90, 80%, 65%);
-    color: beige;
+    background-color: aliceblue;
+    color: rgb(12, 12, 11);
 }
