@@ -1,0 +1,18 @@
+.presentCurrency {
+    background-color: blue;
+    color: gold;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.presentCurrency__link {
+    color: gold;
+    inset-inline: inherit;
+    text-decoration: none;
+}
+
+.presentCurrency__link:hover {
+    color: beige;
+}

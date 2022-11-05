@@ -1,0 +1,35 @@
+.form {
+    background-color: rgb(27, 1, 255);
+    border: 1px solid;
+    border-radius: 5px;
+    border-color: gold;
+    color: gold;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.form__in {
+    background-color: goldenrod;
+    color: aliceblue;
+    margin-inline: 5px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    display: inline-block;
+}
+
+.form__recalc {
+    padding: 5px;
+    margin: 0 auto;
+    background-color: hsl(236, 100%, 49%);
+    border-radius: 5px;
+    color: gold;
+    border-color: gold;
+}
+
+.form__recalc:hover {
+    background-color: hsl(90, 80%, 65%);
+    color: beige;
+}
