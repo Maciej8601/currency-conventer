@@ -1,8 +1,11 @@
 {
     {
-        const init = console.log("Pozdrawiam wszystkich!")
-        init;
+        const init = () => {
+            console.log("Pozdrawiam wszystkich!")
+        }
+        init();
     }
+
 
     {
         const formElement = document.querySelector(".js-form");
@@ -16,7 +19,7 @@
             const exchangeRate = selectElement.value;
             const currencyName = selectElement.options[selectElement.selectedIndex].label;
 
-            const result = value / exchangeRate;
+            result = value / exchangeRate;
             currencyElement.innerText = result.toFixed(2) + currencyName;
         });
     }
